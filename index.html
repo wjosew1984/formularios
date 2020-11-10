@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Formularios ACAMICA</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- REF Forms: https://marksheet.io/html-forms.html-->
+  <h1><a href="https://marksheet.io/html-forms.html" target="_blank" >Formularios</a> - <strong>Suscripcion a Acamica</strong></h1>
+  
+  <form action="/action.php" target="_blank">
+    <fieldset>
+      <!-- Agrupa elementos relacionados -->
+      <div>
+      <legend>Informacion Personal:</legend> <!-- Define un titulo para el fieldset -->
+      <input type="text" placeholder="Nombre*" name="nombre" required>
+      <input type="text" name="apellido" placeholder="Apellido*" required>
+    </div>
+    
+    <div>
+      <input type="email" placeholder="Email*" name="email" required>
+      <input type="password" placeholder="Crea una contraseña*" name="password" required>
+    </div>  
+    </fieldset>
+    
+    <fieldset>
+      <legend>Checkboxes</legend>
+      <label>
+        Opt 1
+        <input type="checkbox">
+      </label>
+      <p>
+        Opt 2
+        <input type="checkbox">
+      </p>
+      
+      <div>
+        Opt 3
+        <input type="checkbox">
+      </div>
+    </fieldset>
+    
+    
+    <div>
+      <label for="descripcion">Descripcion:</label>
+      <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+    </div>
+    
+    <div>
+      <label for="pais">Pais de Origen:</label>
+      <select name="pais" id="pais">
+        <option value="" disabled selected>Selecciona un pais...</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Argentina">Argentina</option>
+        <option value="USA">Estados Unidos</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="carrera">Carrera*:</label>
+      <select name="carrera" id="carrera" required>
+        <option value="" disabled selected>Selecciona una carrera...</option>
+        <option value="dwfs">Desarrollo Full Stack</option>
+        <option value="UX/UI">UX/UI</option>
+        <option value="Data science">Data science</option>
+      </select>
+    </div>
+    
+    <div>
+      <label>Genero:</label>
+      M<input type="checkbox" name="genero" id="masculino" value="Masculino">
+      F<input type="checkbox" name="genero" id="femenino" value="Femenino">
+    </div>
+    <div>
+      <label>Aceptas termino y condiciones*</label>
+      Si<input type="radio" name="termino" id="term-si" required>
+      No<input type="radio" name="termino" id="term-no" required>
+    </div>
+    
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+    
+    <div>
+      <button class="reset-button" type="reset">Reset</button>
+    </div>
+    
+  </form>
+</body>
+</html>

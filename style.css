@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  div, fieldset {
+    margin-bottom: 10px;
+  }
+  
+  fieldset div:last-child {
+    margin-bottom: 0px
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .reset-button {
+    font-size: 12px;
+    background-color: gray;
+  }
